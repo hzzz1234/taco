@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Taco Cloud</title>
+    <script type="text/javascript" src="vue.min.js" defer="defer"></script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                message: 'Hello Vue!'
+            }
+        })
+    </script>
+</head>
+
+<body>
+<h1>Welcome to...</h1>
+<img th:src="@{/images/TacoCloud.png}"/>
+<div id="app">
+    {{ message }}
+</div>
+</body>
+</html>
